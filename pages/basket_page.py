@@ -7,9 +7,9 @@ class BasketPage(BasePage):
         self.should_be_name()
 
     def should_be_price(self):
-        assert self.is_element_present(*BasketPageLocators.PRICE_PRODUCT) == self.is_element_present(*BasketPageLocators.PRICE_BUSKET), 'Price is incorrect'
+        assert self.browser.find_element(*BasketPageLocators.PRICE_PRODUCT).text == self.browser.find_element(*BasketPageLocators.PRICE_BUSKET).text, 'Price is incorrect'
         assert True
 
     def should_be_name(self):
-        assert self.is_element_present(*BasketPageLocators.NAME_PRODUCT) == self.is_element_present(*BasketPageLocators.NAME_BASKET), 'Name is incorrect'
+        assert self.browser.find_element(*BasketPageLocators.NAME_PRODUCT).text == self.browser.find_element(*BasketPageLocators.NAME_BASKET).text, 'Name is incorrect'
         assert True
