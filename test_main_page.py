@@ -71,3 +71,21 @@ def test_guest_can_go_to_login_page_from_product_page (browser):
     page = MainPage(browser, link)
     page.open()
     page.go_to_login_page()
+
+def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
+    link = "https://selenium1py.pythonanywhere.com/"
+    page = MainPage(browser, link)
+    page.open()
+    page.go_to_basket()
+    page.basket_is_empty() #корзина пуста
+    page.basket_message_is_empty() #проверка сообщения
+    time.sleep(2)
+
+def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
+    link = "https://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/"
+    page = MainPage(browser, link)
+    page.open()
+    page.go_to_basket()
+    page.basket_is_empty()  # корзина пуста
+    page.basket_message_is_empty()  # проверка сообщения
+    time.sleep(2)
