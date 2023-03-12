@@ -6,14 +6,21 @@ class BasePageLocators():
     BASKET = (By.CSS_SELECTOR, '.btn-group a')
     ITEM_1 = (By.CSS_SELECTOR, '.col-sm-2 :nth-child(2)')
     MESSAGE = (By.CSS_SELECTOR, '#content_inner p')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class MainPageLocators():
     #LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     pass
 
 class LoginPageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOG_IN = (By.CSS_SELECTOR, '[id="login_form"]')
     REGISTER = (By.CSS_SELECTOR, '[id="register_form"]')
+    EMAIL = (By.CSS_SELECTOR, '[name="registration-email"]')
+    PASSWORD_1 = (By.CSS_SELECTOR, '[name="registration-password1"]')
+    PASSWORD_2 = (By.CSS_SELECTOR, '[name="registration-password2"]')
+    BUTTON_REGISTER = (By.CSS_SELECTOR, '[name="registration_submit"]')
+    SECCESSFUL_REGISTER = (By.CSS_SELECTOR, '[class="alertinner wicon"]')
 
 class BasketPageLocators():
     BASKET = (By.CSS_SELECTOR, '[class="btn btn-lg btn-primary btn-add-to-basket"]')

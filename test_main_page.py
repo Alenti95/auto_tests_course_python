@@ -1,17 +1,44 @@
 from .pages.main_page import MainPage
 from .pages.login_page import LoginPage
 from .pages.basket_page import BasketPage
+from .pages.base_page import BasePage
 import time
 import pytest
+
+class TestUserAddToBasketFromProductPage():
+    @pytest.fixture(scope="function", autouse=True)
+    def setup(self, browser):
+        self.link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207'
+        self.page = MainPage(browser, self.link)
+        self.page.open()
+        LoginPage(browser, browser.current_url).register_new_user('', '')
+        LoginPage(browser, browser.current_url).should_be_registered()
+        BasePage(browser, browser.current_url).should_be_authorized_user()
+        yield
+
+    # Открываем страницу товара, Проверяем, что нет сообщения об успехе
+    def test_user_cant_see_success_message(self, browser):
+        self.link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207'
+        page = MainPage(browser, self.link)
+        page.open()
+        BasketPage(browser, browser.current_url).should_not_be_success_message()
+
+    # Открываем страницу, добавляем товар, проверяем название и цену в корзине
+    def test_user_can_add_product_to_basket(self, browser):
+        self.link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
+        page = MainPage(browser, self.link)
+        page.open()
+        page.go_to_add_product()
+        BasketPage(browser, browser.current_url).should_be_price()
+        BasketPage(browser, browser.current_url).should_be_name()
+
 
 def test_guest_can_go_to_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/"
     page = MainPage(browser, link)
     page.open()
     page.go_to_login_page()
-    time.sleep(5)
     login_page = LoginPage(browser, browser.current_url)
-    time.sleep(5)
     login_page.should_be_login_page()
 
 def test_guest_should_see_login_link(browser):
@@ -89,3 +116,4 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     page.basket_is_empty()  # корзина пуста
     page.basket_message_is_empty()  # проверка сообщения
     time.sleep(2)
+
