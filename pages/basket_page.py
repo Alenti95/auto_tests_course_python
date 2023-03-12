@@ -5,12 +5,12 @@ from .locators import BasePageLocators
 class BasketPage(BasePage):
 
     def should_be_price(self):
-        self.browser.implicitly_wait(10)
+        self.browser.implicitly_wait(5)
         assert self.browser.find_element(*BasketPageLocators.PRICE_PRODUCT).text == self.browser.find_element(*BasketPageLocators.PRICE_BUSKET).text, 'Price is incorrect'
         assert True
 
     def should_be_name(self):
-        self.browser.implicitly_wait(10)
+        self.browser.implicitly_wait(5)
         assert self.browser.find_element(*BasketPageLocators.NAME_PRODUCT).text == self.browser.find_element(*BasketPageLocators.NAME_BASKET).text, 'Name is incorrect'
         assert True
 

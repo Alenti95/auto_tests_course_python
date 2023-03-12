@@ -2,7 +2,6 @@ from .pages.main_page import MainPage
 from .pages.login_page import LoginPage
 from .pages.basket_page import BasketPage
 from .pages.product_page import ProductPage
-import time
 import pytest
 
 @pytest.mark.login_guest
@@ -23,7 +22,7 @@ class TestLoginFromMainPage():
         page.should_be_login_link()
 
 @pytest.mark.xfail
-#Добавляем товар в корзину, Проверяем, что нет сообщения об успехе
+#Добавляем товар в корзину, Проверяем, что нет сообщения об успехе. Тест падает
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
     link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1'
     page = ProductPage(browser, link)
@@ -40,7 +39,7 @@ def test_guest_cant_see_success_message(browser):
     BasketPage(browser, browser.current_url).should_not_be_success_message()
 
 @pytest.mark.xfail
-#Добавляем товар в корзину, Проверяем, что нет сообщения об успехе
+#Добавляем товар в корзину, Проверяем, что нет сообщения об успехе. Тест падает
 def test_message_disappeared_after_adding_product_to_basket(browser):
     link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer1'
     page = ProductPage(browser, link)
