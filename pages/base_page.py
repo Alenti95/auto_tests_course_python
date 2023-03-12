@@ -9,12 +9,6 @@ class BasePage():
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
 
-    def basket_is_empty(self):
-        assert self.is_not_element_present(*BasePageLocators.ITEM_1), 'basket is not epty'
-
-    def basket_message_is_empty(self):
-        assert "empty" in self.browser.find_element(*BasePageLocators.MESSAGE).text, 'basket is full'
-
     def go_to_basket(self):
         self.browser.find_element(*BasePageLocators.BASKET).click()
 

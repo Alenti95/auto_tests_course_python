@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00292fb7-51d6-4c44-8733-80e05fbd02e6" name="Changes" comment="create setup for two methods">
-      <change afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_product_page.py" afterDir="false" />
+    <list default="true" id="00292fb7-51d6-4c44-8733-80e05fbd02e6" name="Changes" comment="add test_product_page.py, create setup, marker as need review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/basket_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basket_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_product_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +50,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page">
-    <configuration name="Python tests for test_main_page.TestLoginFromMainPage.test_guest_can_go_to_login_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_main_page.test_guest_cant_see_success_message_after_adding_product_to_basket">
+    <configuration name="Python tests for test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="auto_tests_course_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -58,11 +61,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.TestLoginFromMainPage.test_guest_can_go_to_login_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_product_page.test_guest_can_add_product_to_basket" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.test_guest_cant_see_success_message" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="auto_tests_course_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,11 +75,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_can_add_product_to_basket&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_cant_see_success_message&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_product_page.test_guest_can_go_to_login_page_from_product_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.test_guest_cant_see_success_message_after_adding_product_to_basket" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="auto_tests_course_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +89,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_can_go_to_login_page_from_product_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_cant_see_success_message_after_adding_product_to_basket&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_product_page.test_guest_cant_see_product_in_basket_opened_from_main_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.test_guest_should_see_login_link_on_product_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="auto_tests_course_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,11 +103,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_cant_see_product_in_basket_opened_from_main_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_should_see_login_link_on_product_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.test_message_disappeared_after_adding_product_to_basket" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="auto_tests_course_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,17 +117,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_message_disappeared_after_adding_product_to_basket&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page" />
-        <item itemvalue="Python tests.Python tests for test_product_page.test_guest_can_go_to_login_page_from_product_page" />
-        <item itemvalue="Python tests.Python tests for test_product_page.test_guest_cant_see_product_in_basket_opened_from_main_page" />
-        <item itemvalue="Python tests.Python tests for test_product_page.test_guest_can_add_product_to_basket" />
-        <item itemvalue="Python tests.Python tests for test_main_page.TestLoginFromMainPage.test_guest_can_go_to_login_page" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_guest_cant_see_success_message_after_adding_product_to_basket" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_message_disappeared_after_adding_product_to_basket" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_guest_should_see_login_link_on_product_page" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_guest_cant_see_success_message" />
       </list>
     </recent_temporary>
   </component>
@@ -144,12 +147,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678617924048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add test_product_page.py, create setup, marker as need review">
+      <created>1678628537090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678628537090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="create setup for two methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="create setup for two methods" />
+    <MESSAGE value="add test_product_page.py, create setup, marker as need review" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test_product_page.py, create setup, marker as need review" />
   </component>
 </project>

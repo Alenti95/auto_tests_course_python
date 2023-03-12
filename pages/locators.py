@@ -9,7 +9,6 @@ class BasePageLocators():
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class MainPageLocators():
-    #LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     pass
 
 class LoginPageLocators():
@@ -28,4 +27,4 @@ class BasketPageLocators():
     NAME_PRODUCT = (By.CSS_SELECTOR, '.product_main h1')
     PRICE_BUSKET = (By.CSS_SELECTOR, '#messages > div > .alertinner p strong')
     NAME_BASKET = (By.CSS_SELECTOR, '#messages > div:nth-child(1) > div strong')
-    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '.alert-noicon:nth-child(1) .alertinner ')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '.alert-noicon:nth-child(1) .alertinner')
