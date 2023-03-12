@@ -29,7 +29,3 @@ class LoginPage(BasePage):
         self.browser.find_element(*LoginPageLocators.PASSWORD_1).send_keys(self.password)
         self.browser.find_element(*LoginPageLocators.PASSWORD_2).send_keys(self.password)
         self.browser.find_element(*LoginPageLocators.BUTTON_REGISTER).click()
-
-
-    def should_be_registered(self):
-        assert self.is_element_present(*LoginPageLocators.SECCESSFUL_REGISTER), "Registration failed"
